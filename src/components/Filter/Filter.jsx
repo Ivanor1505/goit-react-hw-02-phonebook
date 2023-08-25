@@ -1,10 +1,11 @@
 import React from "react";
+import { FilterBox, Input } from "./Filter.styled";
 
 export const Filter = ({ filter, onChange }) => {
   return (
-    <div>
+    <FilterBox>
       <label>Filter contacts by name:</label>
-      <input type="text" value={filter} onChange={onChange} />
-    </div>
+      <Input type="text" value={filter} onChange={onChange} />
+    </FilterBox>
   );
 };
