@@ -1,12 +1,13 @@
-import React from "react";
-import { Button } from "./Contact.styled";
-
+import React from 'react';
+import { Button, CotactItem } from './Contact.styled';
 
 export const Contact = ({ name, number, id, onDelete }) => {
-    return (
-        <li>
-          {name}: {number} 
-          <Button onClick={() => onDelete(id)}>Delete</Button>
-        </li>
-    )           
-    };
+  return (
+    <CotactItem>
+      <p>
+        {name}: {number}
+      </p>
+      <Button onClick={() => onDelete(id)}>Delete</Button>
+    </CotactItem>
+  );
+};
